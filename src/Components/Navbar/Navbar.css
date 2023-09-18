@@ -1,0 +1,15 @@
+.nav-padding{
+    padding: 0 4rem;
+}
+
+.login{
+    background-color: var(--gray);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
+.register{
+    background-color: var(--black);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
