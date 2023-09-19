@@ -1,0 +1,16 @@
+.hero-text p{
+    color: var(--tertiary);
+}
+.bank-name{
+    position: relative;
+}
+.bank-name::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: rgb(46, 189, 46);
+    bottom: 16px;
+    left: 0;
+    z-index: -1;
+}

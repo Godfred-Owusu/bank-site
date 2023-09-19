@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-
+// import {AiOutlineMenu} from 'react-icons/ai'
 const Navbar = () => {
   return (
     <nav>
@@ -11,19 +11,23 @@ const Navbar = () => {
         <img className='mt-2' src='../assets/logo.png' alt='hey'/>
     </div>
         
-    <div>
+    <div className='md:hidden sm:hidden lg:block'>
       <a className='mx-4' href='#hey'>Services</a>  
       <a className='mx-4' href='#hey'>Features</a>  
       <a className='mx-4' href='#hey'>Pricing</a>  
       <a className='mx-4' href='#hey'>About Us</a>  
     </div>
 
-    <div className='mx-4'>
-       <button className='mx-4 login'>Login</button>
-       <button className='register'>Register</button>
+    <div className='mx-4 md:hidden sm:hidden lg:block'>
+       <button className='mx-4 login secondary-btn'>Login</button>
+       <button className='register primary-btn'>Register</button>
+    </div>
+    <div>
+
     </div>
     
     </div>
+    {/* <AiOutlineMenu className='md:visible sm:visible lg:hidden'/> */}
     </nav>
   )
 }
