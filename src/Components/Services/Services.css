@@ -1,0 +1,10 @@
+.service-container{
+    background-color: var(--black);
+    border-radius: 20px;
+    color: white;
+}
+
+.image-container{
+    background-color: black;
+    width: fit-content;
+}
