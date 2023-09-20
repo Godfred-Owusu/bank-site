@@ -6,6 +6,7 @@ import Features1 from './Components/Features/Features1'
 import Features2 from './Components/Features/Features2'
 import Features3 from './Components/Features/Features3'
 import Newsletter from './Components/Newsletter/Newsletter'
+import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Features2 />
       <Features3 />
       <Newsletter />
+      <Footer />
     </div>
   )
 }
