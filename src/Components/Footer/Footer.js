@@ -5,23 +5,23 @@ import {BsInstagram} from 'react-icons/bs'
 const Footer = () => {
     const date = new Date().getFullYear()
   return (
-    <section className=''>
+    <section>
         <div className='footer-container paddings'>
-            <div className='flex justify-start items-start gap-10 pb-10'>
+            <div className='lg:flex lg:w-full md:flex-col md:w-auto sm:flex-col sm:w-auto justify-start items-start gap-10 pb-10'>
                 <div className='text-white-500 flex justify-center items-center w-3/12'>
                     <img src='../assets/FooterIcon.png' alt='logo'/> <p><span className='font-semibold'>Atom</span>Bank</p>
                 </div>
-                <div className='w-3/12'>
+                <div className='lg:w-3/12 md:w-auto sm:w-auto'>
                     <h2 className='font-bold pb-5'>Lokasi</h2>
                     <p className='text-sm font-light'>Lorem ipsum dolor sit amet</p>
                     <p className='text-sm font-light'>Lorem ipsum dolor sit amet</p>
                     </div>
-                <div className='w-3/12'>
+                <div className='lg:w-3/12 md:w-auto sm:w-auto'>
                     <h2 className='font-bold pb-5'>Kontak</h2>
                    <p className='text-sm font-light'>Lorem ipsum dolor sit amet</p>
                   
                 </div>
-                <div className='w-3/12'>
+                <div className='lg:w-3/12 md:w-auto sm:w-auto'>
                     <div className='flex justify-center items-center pb-3'>
                     <BsInstagram size={25} /> 
                     <p className='m-2 text-sm font-light'>@atombank</p>
