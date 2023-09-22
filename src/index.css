@@ -29,3 +29,9 @@ body{
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
 }
+
+@media (max-width:768px) {
+    .paddings{
+        padding:4rem 2rem 0 2rem ;
+    }
+}

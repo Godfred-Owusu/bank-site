@@ -2,3 +2,14 @@
     padding: 0 4rem;
 }
 
+.nav-icon{
+    display: none;
+}
+@media (max-width:965px) { 
+    .nav-icon{
+        display: block;
+    }
+    .links,.btn{
+        display: none;
+    }
+}

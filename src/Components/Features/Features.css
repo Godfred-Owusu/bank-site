@@ -1,0 +1,16 @@
+@media (max-width:768px) {
+    .features-container{
+        flex-direction: column;
+    }
+    .text-content{
+        width: 100%;
+    }
+}
+@media (max-width:476px) {
+    .d-text{
+        font-size: 0.5rem;
+    }
+    .download{
+        font-size: 0.5rem;
+    }
+}

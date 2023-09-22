@@ -10,7 +10,59 @@
     width: 100%;
     height: 8px;
     background-color: rgb(46, 189, 46);
-    bottom: 16px;
+    bottom: 12px;
     left: 0;
     z-index: -1;
+}
+
+@media (max-width:1136px) {
+    .hero-text{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:1164px) {
+    .hero-text{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:996px) {
+    .hero-text{
+        font-size: 2rem;
+    }
+    .bank-name::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        background-color: rgb(46, 189, 46);
+        bottom: 5px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@media (max-width:768px) {
+    .hero-text{
+        font-size: 1.8rem;
+    }
+    .hero-container {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .hero-img{
+        width: 80%;
+    }
+
+    .bank-name::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        background-color: rgb(46, 189, 46);
+        bottom: 4px;
+        left: 0;
+        z-index: -1;
+    }
 }
