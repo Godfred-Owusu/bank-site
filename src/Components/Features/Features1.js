@@ -48,22 +48,22 @@ const Features1 = () => {
                     <h2 className='text-3xl py-10'><span className='font-semibold'>Atom</span>Bank for Your Easy</h2>
                     <p className='font-light text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <div className='py-10 flex '>
-                    <button className='primary-btn flex  justify-center items-center gap-2 '>
+                    <button className='primary-btn flex justify-center items-center gap-2 '>
                         <div>
-                        <IoLogoGooglePlaystore className='' size={27}/>
+                        <IoLogoGooglePlaystore className='download' size={27}/>
                         </div>
                         <div>
-                            <p className='text-xs font-thin'>GET IT ON</p>
+                            <p className='text-xs d-text font-thin'>GET IT ON</p>
                          Google Play
                          </div>
                          </button>
                          
                     <button className='primary-btn w-auto mx-5 flex justify-center items-center gap-2'>
                     <div>
-                    <BsApple color='white' size={25} />
+                    <BsApple className='download' color='white' size={25} />
                         </div>
                         <div>
-                        <h6 className='text-xs font-thin text-white-500'>Download on the</h6>
+                        <h6 className='text-xs d-text font-thin text-white-500'>Download on the</h6>
                        <h2 className='text-white-500'> App Store</h2>
                          </div>
                        </button>
