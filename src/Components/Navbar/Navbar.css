@@ -1,10 +1,39 @@
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px #eee;
+    /* padding-bottom: 50%; */
+    z-index: 8;
+}
 .nav-padding{
     padding: 0 4rem;
 }
 
 .nav-icon{
     display: none;
+    position: relative;
 }
+
+.links>a{
+    position: relative;
+}
+
+.links>a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color:rgb(46, 189, 46) ;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.links>a:hover::after{
+    width: 50%;
+}
+
 @media (max-width:965px) { 
     .nav-icon{
         display: block;
@@ -12,4 +41,22 @@
     .links,.btn{
         display: none;
     }
+
+    .mobile-nav{
+        background-color: rgb(226, 222, 222);
+        position: fixed; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 1.2rem ;
+    }
+    a,button{
+        margin: 10px 0 ;
+    }
+    
 }
+

@@ -1,7 +1,12 @@
-import React from 'react'
+import React , {useState}from 'react'
 import './Navbar.css'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 const Navbar = () => {
+  const [active,setActive] = useState('true')
+    function isPressed(){
+      setActive(prevState => !prevState)
+      console.log(active)
+    }
   return (
     <nav>
 
@@ -12,8 +17,8 @@ const Navbar = () => {
     </div>
         
     <div className='links'>
-      <a className='mx-4 ' href='#services'>Services</a>  
-      <a className='mx-4' href='#hey'>Features</a>  
+      <a className='mx-4' href='#services'>Services</a>  
+      <a className='mx-4 ' href='#hey'>Features</a>  
       <a className='mx-4' href='#hey'>Pricing</a>  
       <a className='mx-4' href='#hey'>About Us</a>  
     </div>
@@ -21,8 +26,25 @@ const Navbar = () => {
     <div className='mx-4 '>
        <button className='mx-4 btn login secondary-btn'>Login</button>
        <button className='register btn primary-btn'>Register</button>
-      <AiOutlineMenu className='nav-icon'/>
-    </div>
+       </div>
+       {
+        active ?  <AiOutlineMenu onClick={isPressed} className='nav-icon'/> :
+        <div>
+          <AiOutlineClose onClick={isPressed} className='pop-up nav-icon'/>
+          <div className='mobile-nav ' onClick={isPressed}>
+        
+      <a className=' ' href='#services'>Services</a>  
+      <a className='' href='#features'>Features</a>  
+      <a className='' href='#hey'>Pricing</a>  
+      <a className='' href='#hey'>About Us</a>  
+    
+       <button className='login secondary-btn'>Login</button>
+       <button className='register primary-btn'>Register</button>
+      
+          </div>
+        </div>
+       }
+     
   
     
     </div>

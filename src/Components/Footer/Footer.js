@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section>
         <div className='footer-container paddings'>
-            <div className='lg:flex lg:w-full md:flex-col md:w-auto sm:flex-col sm:w-auto justify-start items-start gap-10 pb-10'>
+            <div className='footer flex justify-start items-start gap-10 pb-10'>
                 <div className='text-white-500 flex justify-center items-center w-3/12'>
                     <img src='../assets/FooterIcon.png' alt='logo'/> <p><span className='font-semibold'>Atom</span>Bank</p>
                 </div>

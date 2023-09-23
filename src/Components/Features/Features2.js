@@ -22,7 +22,7 @@ const Features2 = () => {
         </div> */}
 
 <div className=' paddings'>
-            <div className='features-container flex-row  justify-center items-center gap-10 '>
+            <div className='features-container flex justify-center items-center gap-10 '>
                 <div className='text-content text-start w-1/2'>
                     <h2 className='text-3xl py-10'><span className='font-semibold'>Atom</span>Bank for Your Easy</h2>
                     <p className='font-light text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -31,8 +31,12 @@ const Features2 = () => {
                      <BsArrowRight className='mx-2' />
                      </div>
                 </div>
-                <div className='w-1/3'>
-                    <img className='lg:w-1/3 ' src='../assets/image 19.png' alt='feature'/>
+                {/* <div className=' text-content'>
+                    <img className='w-full' src='../assets/image 19.png' alt='feature'/>
+                </div> */}
+
+<div className=' lg:w-1/3 md:w-1/3 md:mx-auto sm:w-1/3 sm:mx-auto'>
+                    <img src='../assets/image 19.png' alt='feature'/>
                 </div>
             </div>
         </div>

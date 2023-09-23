@@ -40,9 +40,9 @@ const Features1 = () => {
         </div> */}
 
 <div className=' paddings'>
-            <div className='features-container flex justify-center items-center '>
+            <div className='features-container flex justify-center items-center gap-16 '>
                 <div className='image-content w-1/3'>
-                    <img className='lg:w-1/3 ' src='../assets/image 18.png' alt='feature'/>
+                    <img className='w-full ' src='../assets/image 18.png' alt='feature'/>
                 </div>
                 <div className='text-content w-1/2'>
                     <h2 className='text-3xl py-10'><span className='font-semibold'>Atom</span>Bank for Your Easy</h2>
